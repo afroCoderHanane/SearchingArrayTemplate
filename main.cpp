@@ -4,11 +4,12 @@
 #include <iostream>
 #include<string>
 using namespace std;
+//template header
 template<class Search>
 Search search( int size)
 {
-	Search find;
-	Search element;
+	Search find; // element to find
+	Search element; 
 	Search *arrayr = new Search[size];
 	for (int i = 0; i < size; i++)
 	{
@@ -32,7 +33,7 @@ Search search( int size)
 	return find;
 	delete[]arrayr;
 }
-
+// start main 
 int main()
 {  
 	int a = 5;
@@ -41,5 +42,6 @@ int main()
 	search<int>( a);
 	return 0;
 }
+//end main
 
 
